@@ -1,29 +1,11 @@
 package:
   name: music21
-  version: !!str 1.8.1
+  version: "2.0.5"
 
 source:
-  fn: music21-1.8.1.tar.gz
-  url: https://github.com/cuthbertLab/music21/releases/download/v1.8.1/music21-1.8.1.tar.gz
-  md5: b88f74b8a3940e4bca89d90158432ee0
-#  patches:
-   # List any patch files here
-   # - fix.patch
-
-# build:
-  #preserve_egg_dir: True
-  #entry_points:
-    # Put any entry points (scripts to be generated automatically) here. The
-    # syntax is module:function.  For example
-    #
-    # - music21 = music21:main
-    #
-    # Would create an entry point called music21 that calls music21.main()
-
-
-  # If this is a new build for the same version, increment the build
-  # number. If you do not include this key, it defaults to 0.
-  # number: 1
+  fn: music21-2.0.5.tar.gz
+  url: https://pypi.python.org/packages/source/m/music21/music21-2.0.5.tar.gz
+  md5: 8f1c18fede0b9e5c74f7c142160839cd
 
 requirements:
   build:
@@ -42,9 +24,6 @@ test:
     # You can put test commands to be run here.  Use this to test that the
     # entry points work.
 
-
-  # You can also put a file called run_test.py in the recipe that will be run
-  # at test time.
 
   # requires:
     # Put any additional test requirements here.  For example
