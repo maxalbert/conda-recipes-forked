@@ -1,0 +1,23 @@
+package:
+  name: magpar
+  version: 0.9
+
+source:
+  fn: magpar-0.9.tar.gz
+  url: http://www.magpar.net/static/magpar-0.9/download/magpar-0.9.tar.gz
+  patches:
+    - magpar.patch
+    - magpar_code.patch
+
+build:
+  number: 0
+
+test:
+  commands:
+    - which magpar.exe
+
+about:
+  home: http://www.magpar.net/
+  license: GPL
+
+# vim:set ts=8 sw=2 sts=2 tw=78 et:
