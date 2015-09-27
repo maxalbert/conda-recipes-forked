@@ -2,6 +2,11 @@
 
 VER=$PKG_VERSION
 
+if [ -z "$DISPLAY" ]; then
+    echo "Error: variable DISPLAY not set. Aborting."
+    exit 1
+fi
+
 wget http://downloads.sourceforge.net/project/tcl/Tcl/${VER}/tcl${VER}-src.tar.gz
 wget http://downloads.sourceforge.net/project/tcl/Tcl/${VER}/tk${VER}-src.tar.gz
 
