@@ -1,11 +1,10 @@
 package:
   name: geopandas
-  version: !!str 0.1.1
+  version: !!str 0.1.0.dev_bdfc7fb
 
 source:
-  fn: geopandas-0.1.1.tar.gz
-  url: https://pypi.python.org/packages/source/g/geopandas/geopandas-0.1.1.tar.gz
-  md5: a01b5d3eb6bc097665a0ba297c39029f
+  git_url: https://github.com/geopandas/geopandas.git
+  git_rev: bdfc7fb819a53246fb44ca91b260bb394f4177fb
 
 requirements:
   build:
