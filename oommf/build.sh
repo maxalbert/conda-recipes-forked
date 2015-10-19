@@ -1,10 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 TCLTKVERSION=8.5
+CONDA_ROOT_PATH=$(conda info --root)
 
 # Compile OOMMF
-export OOMMF_TCL_CONFIG=/home/vagrant/miniconda/envs/phd/lib/tclConfig.sh
-export OOMMF_TK_CONFIG=/home/vagrant/miniconda/envs/phd/lib/tkConfig.sh
+export OOMMF_TCL_CONFIG=${CONDA_ROOT_PATH}/envs/_build/lib/tclConfig.sh
+export OOMMF_TK_CONFIG=${CONDA_ROOT_PATH}/envs/_build/lib/tkConfig.sh
 tclsh${TCLTKVERSION} oommf.tcl pimake distclean
 tclsh${TCLTKVERSION} oommf.tcl pimake upgrade
 tclsh${TCLTKVERSION} oommf.tcl pimake
