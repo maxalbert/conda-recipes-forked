@@ -1,6 +1,6 @@
 #!/bin/sh
 
-TCLTKVERSION=8.6
+TCLTKVERSION=8.5
 
 # Compile OOMMF
 export OOMMF_TCL_CONFIG=/home/vagrant/miniconda/envs/phd/lib/tclConfig.sh
