@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TCLTKVERSION=8.5
+TCLTKVERSION=8.6
 CONDA_ROOT_PATH=$(conda info --root)
 
 # Compile OOMMF
