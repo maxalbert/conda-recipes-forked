@@ -1,10 +1,10 @@
 package:
   name: oommf
-  version: "12a5bis_20120928"
+  version: "12a6_20150930"
 
 source:
-  fn: oommf12a5bis_20120928.tar.gz
-  url: http://math.nist.gov/oommf/dist/oommf12a5bis_20120928.tar.gz
+  fn: oommf12a6_20150930.tar.gz
+  url: http://math.nist.gov/oommf/dist/oommf12a6_20150930.tar.gz
 
 build:
   number: 0
