@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TCLTKVERSION=8.6
+TCLTKVERSION=8.5
 CONDA_ROOT_PATH=$(conda info --root)
 
 # Compile OOMMF
@@ -20,6 +20,8 @@ cp -r ${SRC_DIR}/* ${PREFIX}/opt/
 # calls the OOMMF executable in $PREFIX/opt/
 oommf_command=$(cat <<EOF
 #! /bin/bash
+export OOMMF_TCL_CONFIG=$PREFIX/lib/tclConfig.sh
+export OOMMF_TK_CONFIG=$PREFIX/lib/tkConfig.sh
 tclsh${TCLTKVERSION} $PREFIX/opt/oommf.tcl "\$@"
 EOF
 )

@@ -11,9 +11,9 @@ build:
 
 requirements:
   build:
-    - tk >=8.6,<8.7
+    - tk >=8.5,<8.6
   run:
-    - tk >=8.6,<8.7
+    - tk >=8.5,<8.6
 
 test:
   commands:
