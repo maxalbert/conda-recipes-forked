@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VER=$PKG_VERSION
+VER=8.5.18
 
 if [ -z "$DISPLAY" ]; then
     echo "Error: variable DISPLAY not set. Aborting."
@@ -39,4 +39,4 @@ cd $PREFIX
 rm -rf man share
 
 cd $PREFIX/bin
-ln -s tclsh8.6 tclsh
+ln -s tclsh8.5 tclsh
