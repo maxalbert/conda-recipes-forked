@@ -1,0 +1,39 @@
+package:
+  name: music21
+  version: "2.2.1"
+
+source:
+  fn: music21-2.2.1.tar.gz
+  url: https://pypi.python.org/packages/source/m/music21/music21-2.2.1.tar.gz
+  md5: db1ca42b8e7fda2e540b7cdbc11bf06a
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - music21
+
+  #commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: https://github.com/cuthbertLab/music21
+  license: GNU Lesser General Public License v3 or later (LGPLv3+)
+  summary: 'A Toolkit for Computer-Aided Musical Analysis and Manipulation.'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
