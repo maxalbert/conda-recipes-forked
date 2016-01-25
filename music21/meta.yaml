@@ -1,11 +1,11 @@
 package:
   name: music21
-  version: "2.2.1"
+  version: "2.1.2"
 
 source:
-  fn: music21-2.2.1.tar.gz
-  url: https://pypi.python.org/packages/source/m/music21/music21-2.2.1.tar.gz
-  md5: db1ca42b8e7fda2e540b7cdbc11bf06a
+  fn: music21-2.1.2.tar.gz
+  url: https://pypi.python.org/packages/source/m/music21/music21-2.1.2.tar.gz
+  md5: a69beeb828f768c6b0a9360c345ff2ce
 
 requirements:
   build:
@@ -14,13 +14,18 @@ requirements:
 
   run:
     - python
+    - setuptools
+    - numpy
+    - scipy
+    - matplotlib
 
 test:
   # Python imports
   imports:
     - music21
 
-  #commands:
+  commands:
+    - python ${SRC_DIR}/music21/test/multiprocessTest.py
     # You can put test commands to be run here.  Use this to test that the
     # entry points work.
 
