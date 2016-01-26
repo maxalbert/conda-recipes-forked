@@ -1,6 +1,6 @@
 package:
   name: vis-framework
-  version: "2.2.0"
+  version: "2.3.1"
 
 source:
 #  fn: vis-framework-2.1.3.tar.bz2
@@ -8,20 +8,23 @@ source:
 #  md5: e1529cf77ed3075a465895dd2596e80b
   git_url: https://github.com/maxalbert/vis-framework.git
   #git_rev: eaa24a2506c14c21e5dd201493eec85335c9daed
-  git_rev: 6761e3b9a69a0c0e46136fe3e9d8b9b1cea98400
+  #git_rev: 358170d06015395fd5695ae36239c7d8f40bf53b
+  git_rev: 990c9264b84271feb8375f07b635cef79e03d3b3
 
 requirements:
   build:
     - python
     - setuptools
-    - music21 >=2.0.3,<2.1
     - pandas >=0.14.1,<0.17
+    - music21 >=2.2.1
 
   run:
     - python
-    - music21 >=2.0.3,<2.1
+    - setuptools
     - pandas >=0.14.1,<0.17
+    - music21 >=2.2.1
     - numexpr
+    - scipy
     - bottleneck
 
 test:
@@ -36,9 +39,9 @@ test:
   commands:
     - python $SRC_DIR/run_tests.py
 
-  requires:
-    - mock
-    - scipy
+  #requires:
+  #  - mock
+  #  - scipy
 
 about:
   home: http://elvisproject.ca/api/
